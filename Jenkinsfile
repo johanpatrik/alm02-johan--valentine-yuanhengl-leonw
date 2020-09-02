@@ -16,7 +16,7 @@ pipeline {
  stage('Deploy') {
  steps {
  echo 'Deploying..'
- sh 'mvn spring-boot:run'
+ echo "mvn spring-boot:run"
  }
  post{
  always{
